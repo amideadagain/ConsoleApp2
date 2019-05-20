@@ -19,7 +19,7 @@ namespace ConsoleApp2
             Console.WriteLine("OY : (" + point.x + ", " + point.y + ")");
 
 
-            Func my_func2 = new Func(1f, 3);
+            Func my_func2 = new Func(10f, 3);
             my_func2.show();
             point = my_func2.GetOXpoint();
             Console.WriteLine("OX : (" + point.x + ", " + point.y + ")");
@@ -34,10 +34,10 @@ namespace ConsoleApp2
 
             Console.WriteLine("Angle : " + (my_func % my_func2));
 
-            Console.Read();
+            Console.ReadKey();
         }
     }
-    class Func
+    public class Func
     {
         public float a;
         public float b;
